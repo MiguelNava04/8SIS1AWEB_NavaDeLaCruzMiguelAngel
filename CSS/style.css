@@ -1,0 +1,10 @@
+*{
+    padding: 10;
+    background-color: aqua;
+    font-family: Helvetica;
+}
+
+.div_titulo{
+    border: 2px;
+    background-color: coral;
+}
