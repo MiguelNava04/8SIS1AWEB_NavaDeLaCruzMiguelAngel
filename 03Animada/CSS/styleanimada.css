@@ -32,7 +32,7 @@
     box-sizing: border-box;
 }
 
-.LabelL{
+.label{
     width: 64px;
     background-color: goldenrod;
     color: aliceblue;
@@ -46,7 +46,7 @@
     animation-direction: alternate;
 }
 
-.Loader{
+.loader{
     width: 64px;
     height: 64px;
     border: 10px solid #009988;
@@ -55,12 +55,12 @@
     animation: girar 2s linear infinite;
 }
 
-.Louder doble{
+.louder doble{
     width: 64px;
     height: 64px;
-    border: 16px solid #990054;
-    border-top: 16px solid #c0d317;
-    border-bottom: ;
+    border: 16px solid #ea47dc;
+    border-top: 16px solid #c1f548;
+    border-bottom: 16px solid #75fef7;
     border-radius: 50%;
     animation: girar 2s linear infinite;
 }
