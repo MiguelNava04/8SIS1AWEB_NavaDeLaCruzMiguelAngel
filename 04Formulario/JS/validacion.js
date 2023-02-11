@@ -5,36 +5,9 @@ function validar(formulario){
         formulario.nombre.focus();
     }
 
-    var checkOk = "WQEWREERGEFGERQBTT" + 
-    "qwewrwefrgqergergege";
-
-    var checkString = formulario.nombre.value;
-
-    var todoesvalido = true;
-
-    for(var i = 0; i < checkString.length; i++){
-        var ch = checkString.charAt(i);
-        for(var j= 0; j < checkOk.length, j++);
-            if(ch == checkOk.charAt(j)){
-                break;
-            }
-
-        if(j == checkOk.length){
-            todoesvalido = false;
-            break;
-        }
     
-    }
-    if(!todoesvalido){
-        alert("Escriba unicamente letras en el campo nombre")
-        formulario.nombre.focus();
-        return false;
-    }
-
-
-    {
-
-    var checkOk = "0987654321";
+    
+    var checkOK = "0987654321";
 
     var checkString = formulario.edad.value;
 
@@ -42,32 +15,29 @@ function validar(formulario){
 
     for(var i = 0; i < checkString.length; i++){
         var ch = checkString.charAt(i);
-        for(var j= 0; j < checkOk.length, j++);
-            if(ch == checkOk.charAt(j)){
+        for(var j = 0; j < checkOK.length; j++){
+            if(ch == checkOK.charAt(j)){
                 break;
             }
-
-        if(j == checkOk.length){
+        }
+        if(j == checkOK.length){
             todoesvalido = false;
             break;
         }
-    
     }
     if(!todoesvalido){
-        alert("Escriba unicamente numeros en el campo nombre")
+        alert("Escriba unicamente numeros en el campo edad");
         formulario.edad.focus();
         return false;
     }
 
     var txt = formulario.correo.value;
 
-    var b = /^[^@\s]+[^@\.\s]+(\.[^@\.\s])+$/;
+    var b = /^[^@\s]+[^@\.\s]+(\.[^@\.\s]+)+$/;
 
-    alert("Email " + b.test(txt)?(" ": " no ")+ "valido")
+    alert("Email " + (b.test(txt)? " ": " no ")+ "valido");
 
     return b.test;
-
-
 
 
 }
